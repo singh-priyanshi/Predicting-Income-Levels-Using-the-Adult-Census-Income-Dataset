@@ -6,7 +6,6 @@ This project leverages the UCI Adult Census Income dataset to predict whether an
 
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
@@ -40,12 +39,35 @@ The dataset contains the following features:
 - Native-country
 
 ### Target
-
 The target variable is a binary label:
 - `>50K`: Income greater than $50,000
 - `<=50K`: Income less than or equal to $50,000
 
-## Project Structure
+## Installation
+Clone the repository:
+bash
+git clone https://github.com/singh-priyanshi/adult-census-income.git
+cd adult-census-income
 
-The project is organized as follows:
+Install dependencies:
+bash
+pip install -r requirements.txt
 
+### Usage
+Open the notebook to explore the analysis and training steps:
+
+bash
+jupyter notebook notebooks/adult-census-income.ipynb
+Follow the instructions within the notebook to see each step of the process. Run all cells to load data, preprocess it, perform EDA, train models, and evaluate results.
+
+### Results
+Several machine learning models are evaluated, including:
+
+- Logistic Regression
+- Decision Trees
+- Random Forest
+- Gradient Boosting
+The final model selection and its performance metrics are based on accuracy, precision, recall, and F1-score.
+
+### Contributing
+Contributions are welcome! Please feel free to open an issue or submit a pull request for improvements or feature requests.
